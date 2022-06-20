@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/Fondo.jpg");
+  font-family: arial;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header"  "main main" "footer footer"; }
+
+.header {
+  grid-area: header; }
+  .header nav .menu {
+    background-color: #7f93aaef;
+    list-style-type: none;
+    padding: 5px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .header nav .menu li {
+      padding: 0.8rem;
+      margin: 0.7rem; }
+      .header nav .menu li a {
+        color: black;
+        text-decoration: none;
+        padding: 1.5rem; }
+        .header nav .menu li a:hover {
+          background-color: #6a8592;
+          font-weight: bold; }
+
+.main {
+  grid-area: main; }
+  .main .titulo {
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem; }
+  .main .titulonoticia {
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem; }
+  .main .titulohome {
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem; }
+  .main .empresa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    color: #0e313f; }
+    .main .empresa .texto {
+      line-height: 1;
+      padding: 0.5em;
+      width: 50%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .main .empresa .imagen {
+      margin: 1rem;
+      border-radius: 50%;
+      padding: 5px;
+      display: inline;
+      width: 30%;
+      height: 30%;
+      object-fit: cover;
+      text-align: center; }
+  .main .quienes {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    max-width: 1000px;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman"; }
+  .main .row {
+    margin: 20px;
+    line-height: 1;
+    padding: 0.5em;
+    width: 90%; }
+  .main .accordion-body {
+    list-style: none;
+    text-decoration: none; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-area: footer;
+  background-color: #7f93aaef;
+  padding: 5px;
+  width: 90%;
+  margin: 20px auto;
+  color: #f0ecc3; }
+  .footer .redes {
+    display: flex;
+    justify-content: flex-start; }
+    .footer .redes img {
+      width: 70px;
+      height: 70px;
+      padding: 0.7rem;
+      border-radius: 20px; }
+
+.form {
+  margin: auto;
+  padding: auto;
+  display: block; }

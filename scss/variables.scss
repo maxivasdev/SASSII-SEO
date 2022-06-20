@@ -1,0 +1,16 @@
+$bg-1:#f0ecc3;
+$bg-2:#7f93aaef;
+$text:#0e313f;
+
+@mixin flex(){
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+@mixin titulo(){
+    text-decoration: underline;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

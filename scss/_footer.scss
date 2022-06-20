@@ -1,0 +1,24 @@
+.footer{
+    @include flex();
+    grid-area: footer;
+    background-color: $bg-2;
+    padding:5px;
+    width: 90%;
+    margin:20px auto;
+    color:$bg-1;
+    .redes{
+        display:flex;
+        justify-content: flex-start;
+        img{
+            width: 70px;
+            height: 70px;
+            padding:0.7rem;
+            border-radius: 20px;
+        }
+    }
+    
+}
+
+
+
+
